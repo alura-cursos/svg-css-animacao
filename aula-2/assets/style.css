@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: #FFEAD4;
+  overflow-x: hidden;
+}
+
+.container-header {
+    width: 100vw;
+    /* border: #BE253F 1px solid; */
+}
+
+.lett-header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-top: 10%;
+    fill: transparent;
+    animation: lett-preenchimento 0.5s ease-in-out forwards 4s; 
+}
+
+.lett-header path {
+    stroke-width: 2px;
+    stroke: #BE253F;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: lett-tracado 5s ease-in-out forwards 1s; 
+
+}
+
+@keyframes lett-preenchimento {
+    to {
+        fill: #BE253F;
+    }
+}
+
+@keyframes lett-tracado {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
